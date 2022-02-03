@@ -1,0 +1,85 @@
+:root {
+  --purple: #9C27B0;
+  --darkPurple: #7B1FA2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'sans serif'
+}
+
+body {
+  background: #212121;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-input {
+  outline: none;
+  border: none;
+  font-size: 25px;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid var(--purple);
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.todo-btn {
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  font-size: 25px;
+  background-color: var(--purple);
+  color: white;
+  border-radius: 10px;
+}
+
+.todo-button:hover {
+  background-color: var(--darkPurple);
+}
+
+.todo-button:active {
+  outline: none;
+}
+
+.added-todo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 25px;
+  width: 445px;
+  margin: auto;
+  margin-top: 5px;
+  background-color: #009688;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.text {
+  cursor: pointer;
+}
+
+.remove-icon {
+  display: flex;
+  cursor: pointer;
+}
+
+.complete {
+  opacity: 80%;
+}
